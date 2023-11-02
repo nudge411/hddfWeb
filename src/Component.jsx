@@ -16,8 +16,8 @@ export default function Component() {
         console.log('XR 스탬프 투어')
     }
 
-    const handleClickXR = () => {
-        console.log('XR 간판 인식 (동대문점)')
+    const showARViewContents = () => {
+        console.log(window.Android)
     }
 
 
@@ -39,7 +39,7 @@ export default function Component() {
                     </div>
                     <div className="flex items-center gap-2 justify-around">
                         <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXRStampTour}>XR 스탬프 투어</div>
-                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXR}>XR 간판 인식 (동대문점)</div>
+                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={showARViewContents}>XR 간판 인식 (동대문점)</div>
                     </div>
                 </div>
             </main>
