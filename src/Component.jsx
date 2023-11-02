@@ -17,8 +17,7 @@ export default function Component() {
     }
 
     const showARViewContents = () => {
-        console.log('test1')
-        console.log(window.Android)
+        window.Android.moveARViewContents()
     }
 
 
