@@ -17,7 +17,7 @@ export default function Component() {
     }
 
     const showARViewContents = () => {
-        window.Android.checkARCoreSupportDevice()
+        window.Android.showARViewContents()
     }
 
 
