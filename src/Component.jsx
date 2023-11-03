@@ -2,6 +2,11 @@
  * v0 by Vercel.
  * @see https://v0.dev/t/CF6CtRGlgJi
  */
+import { FiArrowLeft } from "react-icons/fi";
+import { GiPresent } from "react-icons/gi";
+
+
+
 export default function Component() {
 
     const handleClickBack = () => {
@@ -24,13 +29,9 @@ export default function Component() {
     return (
         <div className="w-full h-full flex flex-col min-w-[360px] max-w-[960px]">
             <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300">
-                <button className="focus:outline-none">
-                   뒤로
-                </button>
-                <div>이벤트</div>
-                <button className="focus:outline-none">
-                   선물상자
-                </button>
+                <FiArrowLeft size={24}/>
+                <div className="font-semibold text-lg">이벤트</div>
+                <GiPresent size={24}/>
             </header>
             <main className="flex-grow overflow-y-auto">
                 <div className="flex flex-col gap-4 p-4">
@@ -39,7 +40,7 @@ export default function Component() {
                     </div>
                     <div className="flex items-center gap-2 justify-around">
                         <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXRStampTour}>XR 스탬프 투어</div>
-                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={showARViewContents}>XR 간판 인식 (동대문점)</div>
+                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={showARViewContents}>XR 간판 인식</div>
                     </div>
                 </div>
             </main>
