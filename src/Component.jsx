@@ -17,7 +17,8 @@ export default function Component() {
     }
 
     const showARViewContents = () => {
-        window.Android.checkPermission()
+        const  resuls = window.Android.checkARCoreSupportDevice()
+        alert(resuls)
     }
 
 
