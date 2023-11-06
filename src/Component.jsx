@@ -27,7 +27,7 @@ export default function Component() {
 
 
     return (
-        <div className="w-full h-full flex flex-col min-w-[300px] max-w-[960px]">
+        <div className="w-full h-full flex flex-col min-w-[280px] max-w-[960px]">
             <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300">
                 <FiArrowLeft size={24}/>
                 <div className="font-semibold text-lg">이벤트</div>
