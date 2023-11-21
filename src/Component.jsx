@@ -9,18 +9,6 @@ import { GiPresent } from "react-icons/gi";
 
 export default function Component() {
 
-    const handleClickBack = () => {
-        console.log('뒤로가기')
-    }
-
-    const handleClickGift = () => {
-        console.log('선물상자')
-    }
-
-    const handleClickXRStampTour = () => {
-        window.AndroidBridge.showARViewContents()
-    }
-
     const handleClickXRScan = () => {
         window.AndroidBridge.showARViewContents()
     }
@@ -39,8 +27,7 @@ export default function Component() {
                         XR 콘텐츠 프로모션 상세 안내 영역
                     </div>
                     <div className="flex items-center gap-2 justify-around">
-                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXRStampTour}>XR 스탬프 투어</div>
-                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXRScan}>XR 간판 인식</div>
+                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXRScan}>XR 컨텐츠 시작</div>
                     </div>
                 </div>
             </main>
