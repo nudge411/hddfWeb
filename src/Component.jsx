@@ -18,11 +18,11 @@ export default function Component() {
     }
 
     const handleClickXRStampTour = () => {
-        window.Android.showARViewContents()
+        window.AndroidBridge.showARViewContents()
     }
 
     const handleClickXRScan = () => {
-        window.Android.showARViewContents()
+        window.AndroidBridge.showARViewContents()
     }
 
 
