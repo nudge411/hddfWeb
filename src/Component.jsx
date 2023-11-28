@@ -10,7 +10,7 @@ import { GiPresent } from "react-icons/gi";
 export default function Component() {
 
     const handleClickXRScan = () => {
-        window.AndroidBridge.showARViewContents()
+        window.AndroidBridge.showARViewContents("Donald", "KR")
     }
 
 
