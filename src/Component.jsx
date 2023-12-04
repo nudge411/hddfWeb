@@ -9,8 +9,8 @@ import { GiPresent } from "react-icons/gi";
 
 export default function Component() {
 
-    const handleClickXRScan = () => {
-        window.AndroidBridge.showARViewContents("Donald", "KR")
+    const startVRService = () => {
+        window.android.startVRService("Donald", "KR")
     }
 
 
@@ -27,7 +27,7 @@ export default function Component() {
                         XR 콘텐츠 프로모션 상세 안내 영역
                     </div>
                     <div className="flex items-center gap-2 justify-around">
-                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={handleClickXRScan}>XR 컨텐츠 시작</div>
+                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={startVRService}>XR 컨텐츠 시작</div>
                     </div>
                 </div>
             </main>
