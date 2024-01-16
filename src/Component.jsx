@@ -11,7 +11,7 @@ export default function Component() {
 
     const showARViewContents = () => {
         console.log(window);
-        window.android.showARViewContents("Donald", "KR")
+        window.Android.showARViewContents("Donald", "KR")
     }
 
 
