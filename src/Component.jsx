@@ -9,13 +9,12 @@ import { GiPresent } from "react-icons/gi";
 
 export default function Component() {
 
-    const showARViewContents = () => {
-        console.log(window);
-        window.Android.showARViewContents("Donald", "KR")
+    const showARViewContents = (userId, nationCode) => {
+        window.Android.showARViewContents(userId, nationCode)
     }
 
 
-    return (
+    return ( 
         <div className="w-full h-full flex flex-col min-w-[280px] max-w-[960px]">
             <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300">
                 <FiArrowLeft size={24}/>
@@ -28,7 +27,7 @@ export default function Component() {
                         XR 콘텐츠 프로모션 상세 안내 영역
                     </div>
                     <div className="flex items-center gap-2 justify-around">
-                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={showARViewContents}>XR 컨텐츠 시작</div>
+                        <div className={'border-2 w-full h-32 flex justify-center items-center rounded-2xl'} onClick={showARViewContents("Donald", "ko")}>XR 컨텐츠 시작</div>
                     </div>
                 </div>
             </main>
